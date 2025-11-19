@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowIdea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Tailwind CDN (Recommended) -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <!-- <script src="tailwindcss.js"></script> -->
+    <style>
+        :root {
+            --color: rgb(0, 181, 175);
+            --second: rgba(110, 204, 215, 0.389);
+            --third: #134446;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header>
+        <nav class="shadow-sm flex items-center justify-between py-2 px-6 sm:p-4 sm:px-6">
+
+            <!-- Logo -->
+            <div class="font-bold text-2xl cursor-pointer before:transition-all before:duration-300 cursor-pointer relative before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-[var(--color)] before:-z-10 hover:before:w-full">GrowIdea</div>
+        
+            <!-- Desktop Menu (hidden on mobile) -->
+            <ul class="hidden sm:flex items-center gap-10 font-semibold">
+                <li class="before:transition-all before:duration-300 cursor-pointer relative before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-[var(--color)] before:-z-10 hover:before:w-full">Home</li>
+                <li class="before:transition-all before:duration-300 cursor-pointer relative before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-[var(--color)] before:-z-10 hover:before:w-full">About</li>
+                <li class="before:transition-all before:duration-300 cursor-pointer relative before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-[var(--color)] before:-z-10 hover:before:w-full">Projects</li>
+                <li class="before:transition-all before:duration-300 cursor-pointer relative before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-[var(--color)] before:-z-10 hover:before:w-full">Contact</li>
+            </ul>
+        
+            <!-- Login + Signup (Desktop Only) -->
+            <div class="hidden sm:flex items-center gap-6 font-semibold">
+                <div class="cursor-pointer">Login</div>
+                <div class="text-sm h-8 flex justify-center items-center text-white w-24 rounded bg-[var(--color)] cursor-pointer">
+                    Sign Up
+                </div>
+            </div>
+        
+            <!-- Hamburger (Mobile Only) -->
+            <button id="nav_btn" class="sm:hidden p-3 z-50 relative">
+                <div id="line1" class="w-6 h-1 bg-black my-1 transition-all duration-300"></div>
+                <div id="line2" class="w-6 h-1 bg-black my-1 transition-all duration-300"></div>
+                <div id="line3" class="w-6 h-1 bg-black my-1 transition-all duration-300"></div>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="flex items-center sm:items-start flex-col sm:flex-row sm:p-5">
+        <!-- Left Side -->
+        <div class="w-[80%] h-full sm:w-[50%] sm:pt-28 pt-10 flex flex-col justify-center sm:pl-10">
+            <h1 class="font-extrabold text-[40px] text-center sm:text-left sm:text-[3.5vw] sm:leading-tight leading-normal">
+                Unlock Your 
+                <span class="text-[var(--color)]">Business Potential</span>
+                With Instagram Advertising
+            </h1>
+            <p class="font-semibold text-lg text-gray-700 sm:text-gray-600 mt-8 sm:text-base sm:mt-4 text-center sm:text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex saepe accusamus suscipit dolores facilis. Dolore ut porro 
+                debitis ipsam autem laboriosam quos! Lorem ipsum dolor sit amet.
+            </p>
+
+            <div class="hidden sm:flex sm:gap-6 sm:mt-7">
+                <button id="btn1" class="transition-colors duration-500 hover:bg-white hover:text-black hover:border-gray-500 hover:border-[1px] hidden sm:flex sm:px-7 sm:py-2 bg-[var(--color)] text-white rounded">Explore More</button>
+                <button id="btn2" class="transition-colors duration-500 hover:bg-[var(--color)] hover:text-white hidden sm:flex px-7 py-2 font-semibold border border-gray-400 rounded">Contact Us</button>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="w-full h-full sm:w-[50%] flex justify-center sm:justify-end items-center">
+            <img src="./images/main.png" alt="Main Image" class="mb-32 mt-20 sm:max-w-[95%]">
+        </div>
+    </main>
+    <main class="bg-[var(--second)] pt-5 sm:pt-5 sm:pb-12">
+        <div class="flex justify-center items-center h-[20%] w-full">
+            <h1 class="text-4xl p-5 text-[var(--third)] font-extrabold">How We Work</h1>
+        </div>
+        <div class="bg-transparent gap-5 flex sm:flex-row flex-col items-center justify-center h-[60%] w-full pt-5 sm:pt-10">
+            <div class="transition-all transform hover:scale-110 duration-300 sm:pt-5 sm:pb-12 sm:mt-0 p-5 flex items-center flex-col h-[95%] w-72 bg-white shadow-xl rounded-2xl">
+                <i class="mt-2 text-[var(--color)] text-6xl fa-solid fa-lightbulb"></i>
+                <h2 class="text-center font-bold text-2xl mt-4">Build</h2>
+                <p class="mt-4 text-center font-semibold text-xm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magni? Est molestias aliquam consequatur ut rerum ullam iste laboriosam repudiandae.</p>
+            </div>
+            <div class="transition-all transform hover:scale-110 duration-300 p-5 flex  sm:pb-12 items-center flex-col h-[95%] w-72 bg-white shadow-xl rounded-2xl">
+                <i class="mt-2 text-[var(--color)] text-6xl fa-solid fa-pen-ruler"></i>
+                <h2 class="text-center font-bold text-2xl mt-4">Build</h2>
+                <p class="mt-4 text-center font-semibold text-xm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam atque beatae consequuntur tempore vero! Eos, inventore! Quibusdam enim eligendi voluptatum.</p>
+            </div>
+            <div class="transition-all transform hover:scale-110 duration-300 p-5 flex items-center sm:pb-12 flex-col h-[95%] w-72 bg-white shadow-xl rounded-2xl">
+                <i class="mt-2 text-[var(--color)] text-6xl fa-solid fa-tags"></i>
+                <h2 class="text-center font-bold text-2xl mt-4">Build</h2>
+                <p class="mt-4 text-center font-semibold text-xm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam atque beatae consequuntur tempore vero! Eos, inventore! Quibusdam enim eligendi voluptatum.</p>
+            </div>
+            <div class="transition-all transform hover:scale-110 duration-300 p-5 flex items-center flex-col sm:pb-12 h-[95%] w-72 bg-white shadow-xl rounded-2xl">
+                <i class="mt-2 text-[var(--color)] text-6xl fa-solid fa-chart-line"></i>
+                <h2 class="text-center font-bold text-2xl mt-4">Build</h2>
+                <p class="mt-4 text-center font-semibold text-xm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam atque beatae consequuntur tempore vero! Eos, inventore! Quibusdam enim eligendi voluptatum.</p>
+            </div>
+        </div>
+        <div class="sm:pb-0 pb-8">
+            <h2 class="text-center text-[var(--third)] mt-10 sm:mt-16 font-bold text-4xl">This is How We Get Things Done!</h2>
+        </div>
+    </main>
+<!-- OVERLAY + NAV -->
+<div id="overlay" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-0 transition-all duration-300 z-50 flex justify-end">
+    <div id="nav_container" class="flex flex-col w-[60%] h-full bg-white pl-3 transition-transform duration-300 translate-x-full">
+        <div class="flex items-center mb-4">
+            <h2 class="mt-2 text-xl font-bold">More Options</h2>
+        </div>
+
+        <div id="navbar">
+            <ul class="space-y-3 text-gray-700">
+                <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Home</li>
+                <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">About</li>
+                <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Projects</li>
+                <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    let nav_btn = document.getElementById("nav_btn");
+    let overlay = document.getElementById("overlay");
+    let nav_container = document.getElementById("nav_container");
+
+    let line1 = document.getElementById("line1");
+    let line2 = document.getElementById("line2");
+    let line3 = document.getElementById("line3");
+
+    // OPEN NAV
+    nav_btn.addEventListener("click", () => {
+        overlay.classList.remove("hidden");
+
+        setTimeout(() => {
+            overlay.classList.remove("bg-opacity-0");
+            overlay.classList.add("bg-opacity-40");
+            nav_container.classList.remove("translate-x-full");
+        }, 10);
+
+        // Hamburger Animation
+        line1.classList.add("rotate-45", "translate-y-2");
+        line2.classList.add("opacity-0");
+        line3.classList.add("-rotate-45", "-translate-y-2");
+    });
+
+    // CLOSE NAV
+    overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+            overlay.classList.add("bg-opacity-0");
+            overlay.classList.remove("bg-opacity-40");
+            nav_container.classList.add("translate-x-full");
+
+            // Hamburger Reset
+            line1.classList.remove("rotate-45", "translate-y-2");
+            line2.classList.remove("opacity-0");
+            line3.classList.remove("-rotate-45", "-translate-y-2");
+
+            setTimeout(() => {
+                overlay.classList.add("hidden");
+            }, 300);
+        }
+    });
+</script>
+
+</body>
+</html>
